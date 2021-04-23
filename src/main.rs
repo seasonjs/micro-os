@@ -3,7 +3,7 @@
 // 移除main函数
 #![no_main]
 
-
+#[allow(dead_code)]
 use core::panic::PanicInfo;
 
 static HELLO: &[u8] = b"Hello World!";
@@ -27,3 +27,5 @@ fn panic(_info: &PanicInfo) -> ! {
 
     loop {}
 }
+
+
